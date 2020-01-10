@@ -5,7 +5,7 @@ namespace MemberService
     {
 
         public bool Exist(Member member);
-        public bool Create(Member member);
+        public Member Create(Member member);
 
     }
 }

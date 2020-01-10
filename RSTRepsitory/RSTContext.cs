@@ -1,11 +1,10 @@
 ﻿using System;
-using MemberService;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using RSTRepsitory.Models;
 
 namespace RSTRepsitory
 {
-    public class RSTContext : DbContext, IMemberContext
+    public class RSTContext : DbContext
     {
         public RSTContext(DbContextOptions<RSTContext> options) : base(options)
         {

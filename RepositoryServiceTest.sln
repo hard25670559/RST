@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSTAPI", "RSTAPI\RSTAPI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteMigrations", "SqliteMigrations\SqliteMigrations.csproj", "{CDE87A78-07C6-44E8-8C6C-733FC8B9C67B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.Core", "Repository.Core\Repository.Core.csproj", "{68F333DF-3527-432B-A7B5-93BE78FEAEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSTAdapter", "RSTAdapter\RSTAdapter.csproj", "{0122DD54-162D-4FCC-9BF5-71D85A06E373}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +35,13 @@ Global
 		{CDE87A78-07C6-44E8-8C6C-733FC8B9C67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDE87A78-07C6-44E8-8C6C-733FC8B9C67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDE87A78-07C6-44E8-8C6C-733FC8B9C67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F333DF-3527-432B-A7B5-93BE78FEAEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F333DF-3527-432B-A7B5-93BE78FEAEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F333DF-3527-432B-A7B5-93BE78FEAEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F333DF-3527-432B-A7B5-93BE78FEAEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0122DD54-162D-4FCC-9BF5-71D85A06E373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0122DD54-162D-4FCC-9BF5-71D85A06E373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0122DD54-162D-4FCC-9BF5-71D85A06E373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0122DD54-162D-4FCC-9BF5-71D85A06E373}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

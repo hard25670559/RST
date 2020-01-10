@@ -12,7 +12,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Repository.Core;
+using Repository.Core.Adapter;
+using RSTAdapter;
 using RSTRepsitory;
+using EntityMember = RSTRepsitory.Models.Member;
+using ServiceMember = MemberService.Member;
 
 namespace RSTAPI
 {
@@ -33,7 +38,13 @@ namespace RSTAPI
                 options => options.UseSqlite(Configuration["ConnectionString:Default"],
                 options => options.MigrationsAssembly(typeof(Startup).Namespace)));
 
-            services.AddScoped<IMemberContext, RSTContext>();
+            services.AddScoped<IDataAdapter<ServiceMember, BaseModel<int>, int>, MemberAdapter>();
+
+            services.AddScoped<ICreate<EntityMember, int>, MemberRepository>();
+            services.AddScoped<IRead<EntityMember, int>, MemberRepository>();
+            services.AddScoped<IUpdate<EntityMember, int>, MemberRepository>();
+            services.AddScoped<IDelete<EntityMember, int>, MemberRepository>();
+
             services.AddScoped<IAuthService, AuthService>();
         }
 
